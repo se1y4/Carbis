@@ -16,5 +16,5 @@ def get_coords(adress):
 
 def get_possible_addresses(query):
     dadata_client = Dadata(os.getenv('API_KEY'))
-    addresses = dadata_client.suggest("address", query)
+    addresses = dadata_client.suggest("address", query, 10)
     return addresses
