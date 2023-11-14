@@ -3,10 +3,13 @@ import sys
 import time
 
 while True:
-    user_input = input("Введите адрес: \n")
-    if user_input == 'q':
+    
+    user_input_address = input("Введите адрес: \n")
+
+    if user_input_address == 'q':
         sys.exit()
-    possible_addresses = api.get_possible_addresses(user_input)
+
+    possible_addresses = api.get_possible_addresses(user_input_address)
     print("Возможные адреса:")
     k = 0
     for address in possible_addresses:
