@@ -1,11 +1,9 @@
-from dotenv import load_dotenv, find_dotenv
-load_dotenv(find_dotenv())
 from dadata import Dadata
 import os
 
 #ВЫВОД КООРДИНАТ ПО АДРЕСУ 
 def get_coords(address, api_key, secret_key):
-    dadata = Dadata(str(api_key), secret_key)
+    dadata = Dadata(str(api_key), str(secret_key))
     coords = dadata.clean("address", address)
     coordsx = coords['geo_lat']
     coordsy = coords['geo_lon']

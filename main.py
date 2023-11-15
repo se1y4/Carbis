@@ -4,8 +4,8 @@ import time
 import os
 import internal.db as db
 
-user_api = input(str("Введите ваш API-ключ: \n"))
-user_secret_key = input(str("Введите ваш секретный ключ: \n"))
+user_api = str(input("Введите ваш API-ключ: \n"))
+user_secret_key = str(input("Введите ваш секретный ключ: \n"))
 user_lang = input("Выберите язык. Если поле оставить пустым, будет установлен русский язык.\n 1 - Русский \n 2 - Английский \n")
 if user_lang == '2':
     user_lang = "en"

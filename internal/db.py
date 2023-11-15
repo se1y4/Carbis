@@ -1,8 +1,5 @@
-from dotenv import load_dotenv, find_dotenv
-load_dotenv(find_dotenv())
-
 import sqlite3 as sq
-#СОЗДАНИЕ БД
+
 with sq.connect("settings.db") as connection:
     cursor = connection.cursor()
 
@@ -14,7 +11,7 @@ with sq.connect("settings.db") as connection:
                   )''')
 
 
-#СОХРАНЕНИЕ НАСТРОЕК В БД
+
 def save_settings( api_key, language = "ru"):
     cursor.execute("SELECT count(*) FROM settings")
     data = cursor.fetchone()
