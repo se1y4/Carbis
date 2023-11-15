@@ -1,5 +1,5 @@
 # Carbis
-A program whose functionality will provide the user with access to the API of the service dadata.ru , in particular - to the functionality of address hints and geocoding
+A program whose functionality will provide the user with access to the API of the service [dadata.ru](https://dadata.ru/) , in particular - to the functionality of address hints and geocoding
 
 ## Usage
 Install Python 3.10 if it is not installed.
