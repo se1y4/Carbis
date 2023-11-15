@@ -16,6 +16,10 @@ pip install -r requirements.txt
 ```
 Run the program by running python main.py <br>
 
+```
+python main.py
+```
+
 After starting, the program will require an api-key and secret-key<br>
 
 To get an API key and a secret key, you need to register in the service dadata.ru , the data will be available in your personal account at the link: https://dadata.ru/profile/#info . <br>
