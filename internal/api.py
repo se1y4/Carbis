@@ -1,5 +1,7 @@
-from dadata import Dadata
 import os
+
+from dadata import Dadata
+
 
 #ВЫВОД КООРДИНАТ ПО АДРЕСУ 
 def get_coords(address, api_key, secret_key):
