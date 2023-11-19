@@ -1,7 +1,8 @@
-import internal.api as api
 import sys
 import time
 import os
+
+import internal.api as api
 import internal.db as db
 
 user_api = str(input("Введите ваш API-ключ: \n"))
